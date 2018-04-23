@@ -4,7 +4,7 @@ function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(51);
 
-	socket = io.connect('http://localhost:3000');
+	socket = io.connect('https://withoutwax-p5-drawing-app.herokuapp.com/');
 	socket.on('mouse', newDrawing);
 }
 
