@@ -1,9 +1,11 @@
 let express = require('express');
 let socket = require('socket.io');
+let cors = require('cors');
 
 let app = express();
 let server = app.listen(process.env.PORT || 3000);
 
+app.use(cors());
 app.use(express.static('public'));
 
 
