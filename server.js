@@ -25,7 +25,7 @@ console.log("My socket server is running");
 // Socket.io
 let io = socket(server);
 io.sockets.on('connection', newConnection);
-io.set('origins', '*:*');
+io.set('origins':'*');
 
 
 function newConnection(socket) {
